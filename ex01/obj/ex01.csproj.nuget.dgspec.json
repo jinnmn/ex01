@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git_rep\\rep\\ex01\\ex01.csproj": {}
+    "C:\\git_rep\\rep\\Ex01\\ex01.csproj": {}
   },
   "projects": {
-    "C:\\git_rep\\rep\\ex01\\ex01.csproj": {
+    "C:\\git_rep\\rep\\Ex01\\ex01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git_rep\\rep\\ex01\\ex01.csproj",
+        "projectUniqueName": "C:\\git_rep\\rep\\Ex01\\ex01.csproj",
         "projectName": "ex01",
-        "projectPath": "C:\\git_rep\\rep\\ex01\\ex01.csproj",
+        "projectPath": "C:\\git_rep\\rep\\Ex01\\ex01.csproj",
         "packagesPath": "C:\\Users\\SNEGOVIK\\.nuget\\packages\\",
-        "outputPath": "C:\\git_rep\\rep\\ex01\\obj\\",
+        "outputPath": "C:\\git_rep\\rep\\Ex01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SNEGOVIK\\AppData\\Roaming\\NuGet\\NuGet.Config"

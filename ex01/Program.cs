@@ -20,15 +20,37 @@
 */
 
 
-string[] CutThatAll(string[] arr){                                  //здесь будет мое решение
-    return arr;
+string[] CalcThat(string[] arr){                                  //  счетный метод !!!
+    bool[] calcArr = new bool[arr.Length];
+    for(int i = 0; i < arr.GetLength(0); i++){
+        if(arr[i].Length <=3) calcArr[i] = true;
+        Console.WriteLine(calcArr[i]);                                  //проверка
+    }
+    
+    return calcArr;
 }
 
-string[] objs = {"a", "1", "22", "333", "4444", "55555"};           //массив
 
-Console.WriteLine(string.Join(", ", CutThatAll(objs)));             //вывод
+string[] CutThat(bool[] calc,string[] arr){                            //  выдает искомый массив !!!
+    int Len = 0; 
+    foreach(bool i in calc){                                            // считаем длинну
+        if
 
-// Console.Write("Введите элементы через пробел:");                  //ввод
+    
+    }
+}                                                    
+
+
+string[] objs = {"a", "1", "22", "333", "4444", "55555"};            //массив
+
+// int x = objs[2].Length;                                           //временный код
+
+Console.WriteLine(string.Join(", ", CutThat(objs)));           //вывод!
+
+
+// Console.Write("Введите элементы через пробел:");                  //ввод!
 // string str = Console.ReadLine()!;
 // string[] objs = str.Split().ToArray();
-// Console.WriteLine(string.Join(", ", objs));                       //проверям что напринимали)
+Console.WriteLine(string.Join(", ", objs));                          //проверям что напринимали)
+
+// Console.WriteLine(x);                                             // временный код
