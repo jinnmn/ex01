@@ -1,0 +1,15 @@
+C:\git_rep\rep\ex01\bin\Debug\net6.0\ex01.exe
+C:\git_rep\rep\ex01\bin\Debug\net6.0\ex01.deps.json
+C:\git_rep\rep\ex01\bin\Debug\net6.0\ex01.runtimeconfig.json
+C:\git_rep\rep\ex01\bin\Debug\net6.0\ex01.dll
+C:\git_rep\rep\ex01\bin\Debug\net6.0\ex01.pdb
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.csproj.AssemblyReference.cache
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.GeneratedMSBuildEditorConfig.editorconfig
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.AssemblyInfoInputs.cache
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.AssemblyInfo.cs
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.csproj.CoreCompileInputs.cache
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.dll
+C:\git_rep\rep\ex01\obj\Debug\net6.0\refint\ex01.dll
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.pdb
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ex01.genruntimeconfig.cache
+C:\git_rep\rep\ex01\obj\Debug\net6.0\ref\ex01.dll
