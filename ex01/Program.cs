@@ -7,69 +7,45 @@
 4. Написать программу, решающую поставленную задачу
 5. Использовать контроль версий в работе над этим небольшим проектом (не должно быть так, что всё залито 
 одним коммитом, как минимум этапы 2, 3, и 4 должны быть расположены в разных коммитах)
-
-Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк,
-длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры,
-либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
-лучше обойтись исключительно массивами.
-
-Примеры:
-[“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
-[“1234”, “1567”, “-2”, “computer science”] → [“-2”]
-[“Russia”, “Denmark”, “Kazan”] → []
 */
 
 
-bool[] CalcThat(string[] arr){                             //  счетный метод !!!
-    bool[] calcArr = new bool[arr.Length];
+bool[] CalcThat(string[] arr){                              //      счетный метод 
+    bool[] calcArr = new bool[arr.Length];                  // создаем счетный массив  
     for(int i = 0; i < arr.GetLength(0); i++){
-        if(arr[i].Length <=3) calcArr[i] = true;
-        Console.WriteLine(calcArr[i]);                        //проверка
+        if( arr[i].Length <= 3) calcArr[i] = true;
     }    
     return calcArr;
 }
 
-string[] CutThat(bool[] elms,string[] arr){                   //  выдает искомый массив !!!
+string[] CutThat(bool[] elms,string[] arr){                 //      выдает искомый массив 
     int len = 0; 
-    foreach(bool el in elms){                                  // считаем длинну
-        if(el) len++;
+    foreach(bool el in elms){                               // считаем длинну
+        if( el ) {
+            len++;
+        }
     }
-    Console.WriteLine(len);
-    string[] anses = new string[len];                             // создаем массив ответа !!!
+    string[] anses = new string[len];                       // создаем массив ответа 
     
-    int i = 0;                                    // cч. длинный 
-    int a = 0;                                     //сч. ответа
+    int i = 0;                                              // cч. длинный 
+    int a = 0;                                              // сч. ответа
 
-    foreach(string ans in arr){
-        if(elms[i]){   
+    foreach(string ans in arr){                             // записываем ответы в массив
+        if( elms[i] ){   
             anses[a] =  arr[i];
             a++;
         }
         i++;                                       
     }
-
     return anses;
-    
 }                                                    
 
+Console.Write("Введите элементы через пробел:");              // ввод
+string str = Console.ReadLine()!;
+string[] objs = str.Split().ToArray();
 
-string[] objs = {"a", "1", "22", "333", "4444", "55555"};     //массив
+bool[] elms = CalcThat( objs );                               //  запуск первого метода 
 
-// int x = objs[2].Length;                                   //временный код
+string[] anses = CutThat( elms, objs );                       //  Запуск второго метода 
 
-bool[] elms = CalcThat(objs);                               //  запуск первого метода !!!
-
-string[] anses = CutThat(elms, objs);                        // Запуск второго метода !!!
-
-
-
-
-Console.WriteLine(string.Join(", ", anses));           //вывод!
-
-
-// Console.Write("Введите элементы через пробел:");           //ввод!
-// string str = Console.ReadLine()!;
-// string[] objs = str.Split().ToArray();
-Console.WriteLine(string.Join(", ", objs));                    //проверям что напринимали)
-
-// Console.WriteLine(x);                                       // временный код
+Console.WriteLine( string.Join(", ", anses ));                // вывод
