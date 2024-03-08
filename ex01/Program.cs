@@ -20,37 +20,56 @@
 */
 
 
-string[] CalcThat(string[] arr){                                  //  счетный метод !!!
+bool[] CalcThat(string[] arr){                             //  счетный метод !!!
     bool[] calcArr = new bool[arr.Length];
     for(int i = 0; i < arr.GetLength(0); i++){
         if(arr[i].Length <=3) calcArr[i] = true;
-        Console.WriteLine(calcArr[i]);                                  //проверка
-    }
-    
+        Console.WriteLine(calcArr[i]);                        //проверка
+    }    
     return calcArr;
 }
 
-
-string[] CutThat(bool[] calc,string[] arr){                            //  выдает искомый массив !!!
-    int Len = 0; 
-    foreach(bool i in calc){                                            // считаем длинну
-        if
-
-    
+string[] CutThat(bool[] elms,string[] arr){                   //  выдает искомый массив !!!
+    int len = 0; 
+    foreach(bool el in elms){                                  // считаем длинну
+        if(el) len++;
     }
+    Console.WriteLine(len);
+    string[] anses = new string[len];                             // создаем массив ответа !!!
+    
+    int i = 0;                                    // cч. длинный 
+    int a = 0;                                     //сч. ответа
+
+    foreach(string ans in arr){
+        if(elms[i]){   
+            anses[a] =  arr[i];
+            a++;
+        }
+        i++;                                       
+    }
+
+    return anses;
+    
 }                                                    
 
 
-string[] objs = {"a", "1", "22", "333", "4444", "55555"};            //массив
+string[] objs = {"a", "1", "22", "333", "4444", "55555"};     //массив
 
-// int x = objs[2].Length;                                           //временный код
+// int x = objs[2].Length;                                   //временный код
 
-Console.WriteLine(string.Join(", ", CutThat(objs)));           //вывод!
+bool[] elms = CalcThat(objs);                               //  запуск первого метода !!!
+
+string[] anses = CutThat(elms, objs);                        // Запуск второго метода !!!
 
 
-// Console.Write("Введите элементы через пробел:");                  //ввод!
+
+
+Console.WriteLine(string.Join(", ", anses));           //вывод!
+
+
+// Console.Write("Введите элементы через пробел:");           //ввод!
 // string str = Console.ReadLine()!;
 // string[] objs = str.Split().ToArray();
-Console.WriteLine(string.Join(", ", objs));                          //проверям что напринимали)
+Console.WriteLine(string.Join(", ", objs));                    //проверям что напринимали)
 
-// Console.WriteLine(x);                                             // временный код
+// Console.WriteLine(x);                                       // временный код
